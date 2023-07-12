@@ -25,8 +25,10 @@
     .movies-thumbnail {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 30px;
       .movie {
         .cover {
+          cursor: pointer;
           img {
             border-radius: 5px;
           }
@@ -45,5 +47,42 @@
   }
   .popular-movies {
     width: 25%;
+    min-height: calc(100vh - 80px);
+    padding: 20px 40px;
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      h4 {
+        text-transform: uppercase;
+        font-weight: bold;
+        border-left: 5px solid #528265;
+        padding-left: 10px;
+      }
+      .view-all {
+        color: #528265;
+        cursor: pointer;
+        text-align: right;
+      }
+  }
+    .movie {
+      margin-bottom: 20px;
+      .name {
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.rating {
+  padding-right: 45px;
+  position: relative;
+  .rating-value {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    font-weight: bold;
   }
 }
